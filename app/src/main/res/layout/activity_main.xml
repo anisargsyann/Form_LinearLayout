@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:orientation="vertical"
+       tools:ignore="MissingConstraints">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="110dp"
+          android:background="#727955"
+          android:layout_marginBottom="30dp"
+          android:gravity="center"
+          android:text="Details Form"
+          android:textColor="#f0f0e0"
+          android:textSize="36sp" />
+
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:layout_marginBottom="30dp"
+          android:hint="*First Name"
+          android:textColorHint="#323d44"
+          android:backgroundTint="#323d44"
+          android:textColor="#323d44"/>
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:layout_marginBottom="30dp"
+          android:hint="*Last Name"
+          android:textColorHint="#323d44"
+          android:backgroundTint="#323d44"
+          android:textColor="#323d44"/>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_marginBottom="30dp">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:text="*Gender"
+            android:textColor="#323d44"
+            android:textSize="19sp"
+            android:gravity="center_vertical"
+            android:layout_marginRight="20dp"/>
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#323d44" />
+
+     </LinearLayout>
+      <EditText
+          android:inputType="number"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:layout_marginBottom="30dp"
+          android:hint="*Age on December 10, 2018"
+          android:textColorHint="#323d44"
+          android:backgroundTint="#323d44"
+          android:textColor="#323d44"/>
+      <Button
+          android:layout_width="130dp"
+          android:layout_height="70dp"
+          android:layout_marginLeft="20dp"
+          android:text="Submit"
+          android:textColor="@color/black"
+          android:backgroundTint="#c5bfa3"/>
+
+   </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
